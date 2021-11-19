@@ -17,6 +17,7 @@ const weatherstack = (latitude, longitude, location, callback) => {
             const currentWeatherReport = body.current
         callback(undefined, 
             {
+                cloudCoverage: currentWeatherReport,
                 location: location,
                 weatherDescription: currentWeatherReport.weather_descriptions,
                 currentTemperature: currentWeatherReport.temperature,

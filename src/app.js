@@ -61,6 +61,7 @@ app.get('/weather', (req, res) => {
             else{
             res.send({
                 title: location,
+                cloudCoverage: cloudCoverage,
                 weatherDescription: weatherDescription,
                 currentTemperature: currentTemperature,
                 chanceToRain: chanceToRain,

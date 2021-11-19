@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e) => {
             } else {
                 messageOne.textContent = data.title
                 messageTwo.textContent = data.currentTemperature + '°C. ' + data.weatherDescription + '. ' + data.chanceToRain + 
-                '% chance to rain. Feels like ' + data.feelsLike+ '°C.'
+                '% chance to rain. Feels like ' + data.feelsLike+ '°C. Cloud coverage is at ' + data.cloudCoverage + '%.'
             }
         })
     })
