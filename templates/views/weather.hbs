@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Weather for {{header}}</title>
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="icon" href="/images/weather.png">
+    </head>
+    <body>
+        <div class="main-content">
+        {{>header}}
+        <h3 align="center">{{weatherDescription}}</h3>
+        <h3 align="center">Current temperature: {{currentTemperature}}°C</h3>
+        <h3 align="center">{{chanceToRain}}% chance to rain</h3>
+        <h3 align="center">Feels like {{feelsLike}}°C</h3>
+        </div>
+    {{>footer}}
+    </body>
+</html>
